@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dnsmasq:
+    image: marcovolpato00/dnsmasq-webproc:latest
+    container_name: dnsmasq
+    ports:
+      - 8080:8080
+      - '54:53/tcp'
+      - '54:53/udp'
+    environment:
+      - HTTP_USER=admin
+      - HTTP_PASS=dnsmasq
