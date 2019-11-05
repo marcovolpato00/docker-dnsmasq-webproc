@@ -31,7 +31,7 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
         -e "HTTP_USER=admin" \
         -e "HTTP_PASS=dnsmasq" \
         --restart always \
-        marcovolpato00/docker-dnsmasq-webproc
+        marcovolpato00/dnsmasq-webproc
     ```
 
 3. Use the web UI visiting `http://<host_ip>:5380/`
