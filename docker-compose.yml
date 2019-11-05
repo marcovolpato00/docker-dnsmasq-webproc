@@ -5,9 +5,11 @@ services:
     image: marcovolpato00/dnsmasq-webproc:latest
     container_name: dnsmasq
     ports:
-      - 8080:8080
-      - '54:53/tcp'
-      - '54:53/udp'
+      - 5380:8080
+      - '53:53/udp'
     environment:
       - HTTP_USER=admin
       - HTTP_PASS=dnsmasq
+    # volumes:
+    #   - SOME_PATH/dnsmasq.conf:/etc/dnsmasq.conf
+    #   - SOME_PATH/lan.list:/etc/lan.list
