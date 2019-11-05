@@ -34,6 +34,11 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
         marcovolpato00/docker-dnsmasq-webproc
     ```
 
+3. Use the web UI visiting `http://<host_ip>:5380/`
+
+## Credits
+This project is based on [docker-dnsmasq](https://github.com/jpillora/docker-dnsmasq) by jpillora.
+
 ## MIT License
 Copyright 2019 Marco Volpato
 
