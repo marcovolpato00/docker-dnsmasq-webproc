@@ -5,11 +5,32 @@ dnsmasq in a Docker container, configurable via a [simple web UI](https://github
 ## Features
 - web UI
 - custom DNS records
-- runs on multiple architectures (**amd64, arm, arm64**)
+- runs on multiple architectures (**AMD64, ARM, ARM64**)
 
 ## Usage
 
-1. Create [dnsmasq.conf](config/dnsmasq.conf) and [lan.list](config/lan.list) (optional, if you want persistence)
+1. (optional, if you want persistence) Create [dnsmasq.conf](config/dnsmasq.conf) with this content:
+    ```
+    # dnsmasq config, for a complete example, see: http://oss.segetech.com/intra/srv/dnsmasq.conf
+
+    # log all dns queries
+    log-queries
+
+    # dont use hosts nameservers
+    no-resolv
+
+    # use cloudflare as default nameservers
+    server=1.0.0.1
+    server=1.1.1.1
+
+    # lan entries, DO NOT MODIFY!
+    addn-hosts=/etc/lan.list
+    ```
+
+    And create [lan.list](config/lan.list). You can add your custom DNS entries here using this syntax:
+    ```
+    192.168.1.101   pc1.mydomain.com    pc1
+    ```
 
 2. Run
 
