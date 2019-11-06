@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG TARGETPLATFORM
+ARG TARGETPLATFORM=arm64
 
 COPY download_webproc.sh /download_webproc.sh
 

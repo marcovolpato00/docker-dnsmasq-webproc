@@ -1,11 +1,11 @@
 # docker-dnsmasq-webproc
 
-dnsmasq in a docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc).
+dnsmasq in a Docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc).
 
 ## Features
 - web UI
 - custom DNS records
-- runs on multiple architectures
+- runs on multiple architectures (**amd64, arm, arm64**)
 
 ## Usage
 
@@ -26,8 +26,8 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
         -d \
         -p 53:53/udp \
         -p 5380:8080 \
-        -v SOME_PATH/dnsmasq.conf:/etc/dnsmasq.conf \
-        -v SOME_PATH/lan.list:/etc/lan.list \
+        -v ./dnsmasq.conf:/etc/dnsmasq.conf \
+        -v ./lan.list:/etc/lan.list \
         -e "HTTP_USER=admin" \
         -e "HTTP_PASS=dnsmasq" \
         --restart always \
