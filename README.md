@@ -1,5 +1,8 @@
 # docker-dnsmasq-webproc
 
+![Docker Pulls](https://img.shields.io/docker/pulls/marcovolpato00/dnsmasq-webproc)
+![MIT License](https://img.shields.io/github/license/marcovolpato00/docker-dnsmasq-webproc)
+
 dnsmasq in a Docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc).
 
 ## Features
