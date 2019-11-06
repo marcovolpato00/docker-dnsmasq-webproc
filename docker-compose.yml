@@ -11,5 +11,5 @@ services:
       - HTTP_USER=admin
       - HTTP_PASS=dnsmasq
     # volumes:
-    #   - SOME_PATH/dnsmasq.conf:/etc/dnsmasq.conf
-    #   - SOME_PATH/lan.list:/etc/lan.list
+    #   - ./dnsmasq.conf:/etc/dnsmasq.conf
+    #   - ./lan.list:/etc/lan.list
