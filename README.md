@@ -1,6 +1,6 @@
 # docker-dnsmasq-webproc
 
-![Docker Pulls](https://img.shields.io/docker/pulls/marcovolpato00/dnsmasq-webproc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/marcovolpato00/dnsmasq-webproc)](https://hub.docker.com/r/marcovolpato00/dnsmasq-webproc)
 ![MIT License](https://img.shields.io/github/license/marcovolpato00/docker-dnsmasq-webproc)
 
 dnsmasq in a Docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc).
@@ -8,7 +8,7 @@ dnsmasq in a Docker container, configurable via a [simple web UI](https://github
 ## Features
 - web UI
 - custom DNS records
-- runs on multiple architectures (**AMD64, ARM, ARM64**)
+- runs on multiple architectures (**amd64, arm, arm64**)
 
 ## Usage
 
